@@ -1,0 +1,158 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background: rgb(141, 230, 141);
+  background: -webkit-gradient(linear, left top, right top, color-stop(36%, rgb(141, 230, 141)), color-stop(68%, rgb(28, 221, 215)));
+  background: linear-gradient(90deg, rgb(141, 230, 141) 36%, rgb(28, 221, 215) 68%);
+}
+
+.hide {
+  display: none;
+}
+
+.todo {
+  max-width: 35vw;
+  min-height: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.todo__wrapper {
+  padding: 20px;
+  background: rgb(240, 240, 240);
+  -webkit-box-shadow: 0px 0px 20px #797A79;
+          box-shadow: 0px 0px 20px #797A79;
+  border-radius: 20px 60px 60px 20px;
+}
+.todo__subheader {
+  font-size: 2rem;
+  color: rgb(85, 83, 83);
+}
+.todo__header {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+.todo__form {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.todo__form-input {
+  width: 100%;
+  padding: 0 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.todo__form-btn {
+  min-width: 55px;
+  margin-left: 10px;
+  font-size: 40px;
+  font-weight: 900;
+  border: none;
+  color: white;
+  background-color: rgb(44, 0, 223);
+}
+.todo__form-btn:hover {
+  -webkit-box-shadow: 0px 0px 4px rgb(44, 0, 223);
+          box-shadow: 0px 0px 4px rgb(44, 0, 223);
+}
+.todo__list {
+  padding: 0;
+  list-style: none;
+}
+.todo__list-clear {
+  display: none;
+  height: 45px;
+  width: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid;
+  color: red;
+  font-size: 30px;
+  font-weight: 900;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.todo__list-clear:hover {
+  background-color: rgb(255, 255, 255);
+}
+.todo__list-ready {
+  display: none;
+  position: absolute;
+  width: 3rem;
+  top: 0;
+  right: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 45px;
+  border: 1px solid;
+  color: green;
+  font-size: 30px;
+  font-weight: 900;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.todo__list-ready:hover {
+  background-color: rgb(255, 255, 255);
+}
+.todo__list-item {
+  position: relative;
+  margin-top: 5px;
+  overflow: hidden;
+  padding: 8px 16px;
+  font-size: 24px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.375rem;
+}
+.todo__list-item:hover {
+  background: rgb(13, 110, 253);
+  color: white;
+}
+.todo__list-item_active {
+  background: rgb(23, 158, 18);
+  color: rgb(235, 231, 231);
+  text-decoration: line-through;
+}
+.todo__list-item:hover .todo__list-clear {
+  display: block;
+}
+.todo__list-item:hover .todo__list-ready {
+  display: block;
+}
+.todo__calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+}
+.todo__calc span {
+  padding: 3px;
+  text-align: left;
+  font-size: 20px;
+}
+.todo__calc-clearall {
+  margin-left: 10px;
+  height: 2rem;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  color: white;
+  background-color: rgb(44, 0, 223);
+}
+.todo__calc-clearall:hover {
+  -webkit-box-shadow: 0px 0px 4px rgb(44, 0, 223);
+          box-shadow: 0px 0px 4px rgb(44, 0, 223);
+}/*# sourceMappingURL=style.css.map */
